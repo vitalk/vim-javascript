@@ -102,7 +102,7 @@ syntax keyword jsPrototype      prototype
 
 if g:javascript_conceal == 1
   syntax keyword jsNull           null conceal cchar=ø
-  syntax keyword jsThis           this conceal cchar=@
+  syntax match   jsThis           /\<this\./ conceal cchar=@
   syntax keyword jsReturn         return conceal cchar=⇚
   syntax keyword jsUndefined      undefined conceal cchar=¿
   syntax keyword jsNan            NaN conceal cchar=ℕ
